@@ -1,5 +1,6 @@
 package com.cognizant.truyum.model;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class MenuItem {
@@ -129,8 +130,10 @@ public class MenuItem {
 
     @Override
     public String toString() {
-        return "MenuItem [id=" + id + ", name=" + name + ", price=" + price + ", active=" + active
-                + ", category=" + category + ", freeDelivery=" + freeDelivery + "]";
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/mm/yyyy");
+        return String.format("%-10s%-22s%-10s%-10s%-15s%-16s%s", id, name, price,
+                active == true ? "Yes" : "No", sdf.format(dateOfLaunch), category,
+                freeDelivery == true ? "Yes" : "No");
     }
 
 }
