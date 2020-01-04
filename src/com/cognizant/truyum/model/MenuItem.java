@@ -135,5 +135,4 @@ public class MenuItem {
                 active == true ? "Yes" : "No", sdf.format(dateOfLaunch), category,
                 freeDelivery == true ? "Yes" : "No");
     }
-
 }

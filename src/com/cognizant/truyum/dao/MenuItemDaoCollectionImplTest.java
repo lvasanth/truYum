@@ -14,7 +14,6 @@ public class MenuItemDaoCollectionImplTest {
         testModifyMenuItem();
         testGetMenuItem();
         testGetmenuItemListAdmin();
-
     }
 
     public static void testGetmenuItemListAdmin() {
@@ -24,9 +23,7 @@ public class MenuItemDaoCollectionImplTest {
                 "dateOfLaunch", "Category", "Free Delivery");
         for (MenuItem menuItem2 : menu) {
             System.out.println(menuItem2);
-
         }
-
     }
 
     public static void testGetMenuItemListCustomer() {
@@ -36,7 +33,6 @@ public class MenuItemDaoCollectionImplTest {
                 "dateOfLaunch", "Category", "Free Delivery");
         for (MenuItem menuItem2 : menu) {
             System.out.println(menuItem2);
-
         }
     }
 
@@ -45,16 +41,13 @@ public class MenuItemDaoCollectionImplTest {
         MenuItem menuitem = new MenuItem(1, "Eat and Enjoy", 12345.0f, true,
                 DateUtil.convertToDate("02/01/2020"), "Main Dish", false);
         menudao.modifymenuItem(menuitem);
-
     }
 
     public static void testGetMenuItem() {
         System.out.println("Get Menu Item");
         System.out.printf("%-10s%-22s%-10s%-10s%-15s%-16s%s\n", "Id", "Name", "Price", "Active",
                 "dateOfLaunch", "Category", "Free Delivery");
-        MenuItem menuitem = menudao.getmenuItem(3);
+        MenuItem menuitem = menudao.getMenuItem(3);
         System.out.println(menuitem); // invokes String()
-
     }
-
 }

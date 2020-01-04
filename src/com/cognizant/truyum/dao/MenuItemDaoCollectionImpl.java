@@ -29,7 +29,6 @@ public class MenuItemDaoCollectionImpl implements MenuItemDao {
             menuItemList.add(item4);
             menuItemList.add(item5);
         }
-
     }
 
     @Override
@@ -45,9 +44,7 @@ public class MenuItemDaoCollectionImpl implements MenuItemDao {
                     || menuItem.getDateOfLaunch().equals(new Date()))
                     && menuItem.isActive() == true) {
                 menuItems.add(menuItem);
-
             }
-
         }
         return menuItems;
     }
@@ -62,7 +59,7 @@ public class MenuItemDaoCollectionImpl implements MenuItemDao {
     }
 
     @Override
-    public MenuItem getmenuItem(long menuItemId) {
+    public MenuItem getMenuItem(long menuItemId) {
         for (MenuItem menuItem : menuItemList) {
             if (menuItem.getId() == menuItemId) // existing_id=user
                 return menuItem;
