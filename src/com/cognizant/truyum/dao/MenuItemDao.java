@@ -9,7 +9,7 @@ public interface MenuItemDao {
 
     public List<MenuItem> getMenuItemListCustomer(); // depends on DOL and status
 
-    public void modifymenuItem(MenuItem menuitem); // update the menu items
+    public void ModifyMenuItem(MenuItem menuitem); // update the menu items
 
     public MenuItem getMenuItem(long menuItemId);
 

@@ -21,7 +21,7 @@ public class MenuItemDaoCollectionImpl implements MenuItemDao {
             MenuItem item4 = new MenuItem(4, "French Fries", 57.00f, false,
                     DateUtil.convertToDate("02/07/2017"), "Starters", true);
             MenuItem item5 = new MenuItem(5, "Chocolate Brownie", 32.00f, true,
-                    DateUtil.convertToDate("15/03/2017"), "Dessert", true);
+                    DateUtil.convertToDate("15/03/2022"), "Dessert", true);
             menuItemList = new ArrayList<MenuItem>();
             menuItemList.add(item1);
             menuItemList.add(item2);
@@ -50,7 +50,7 @@ public class MenuItemDaoCollectionImpl implements MenuItemDao {
     }
 
     @Override
-    public void modifymenuItem(MenuItem menuitem) {
+    public void ModifyMenuItem(MenuItem menuitem) {
         for (int i = 0; i < menuItemList.size(); i++) {
             if (menuItemList.get(i).getId() == menuitem.getId()) { // exixting_item-id==
                 menuItemList.set(i, menuitem);
