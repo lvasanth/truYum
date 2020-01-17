@@ -11,10 +11,7 @@ public class MenuItemDaoCollectionImplTest {
     public static void main(String[] args) {
         testGetmenuItemListAdmin();
         testGetMenuItemListCustomer();
-        testModifyMenuItem();
-        testGetmenuItemListAdmin();
-        testGetMenuItem();
-        testGetmenuItemListAdmin();
+
     }
 
     public static void testGetmenuItemListAdmin() {

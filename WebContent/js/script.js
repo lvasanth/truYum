@@ -1,8 +1,8 @@
-function valid() {
-    var name = document.forms["form"]["name"].value;
-    var price = document.forms["form"]["price"].value;
-    var dateofLaunch = document.forms["form"]["dateofLaunch"].value;
-    var category = document.forms["form"]["category"].value;
+function validateMenuItemForm() {
+    var name = document.forms["menuItemForm"]["name"].value;
+    var price = document.forms["menuItemForm"]["price"].value;
+    var dateofLaunch = document.forms["menuItemForm"]["dateofLaunch"].value;
+    var category = document.forms["menuItemForm"]["category"].value;
 
     if (name == "") {
         alert("Title is required. ");

@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
 
 <html>
 <head>
@@ -10,19 +12,15 @@
 
 <body>
     <header>
-        <h1>
-            truYum &nbsp;<img src="images/truyum-logo-light.png" width=33 height=34 />
-        </h1>
+    <h1>
+        truYum &nbsp;<img src="images/truyum-logo-light.png" width=33 height=34 />
+    </h1>
     </header>
-    <nav>
-        <a class="menu" href="menu-item-list-customer.html"> Menu </a> <a class="cart" href="cart.html">Cart</a>
-    </nav>
-
-
+    <nav> <a class="menu" href="ShowMenuItemListCustomer"> Menu </a> <a class="cart"
+        href="ShowCart">Cart</a> </nav>
 
 
     <table class="table" cellspacing="20">
-
 
 
         <tr>
@@ -31,22 +29,11 @@
         </tr>
 
         <td id="empty">No items in cart.Use 'Add to Cart' option in <a id="menuitemlist"
-            href="menu-item-list-customer.html "> Menu Item list.</a>
+            href="ShowMenuItemListCustomer "> Menu Item list.</a>
         </td>
     </table>
 
 
-
-
-
-
-
-
-
-
-
-
     <footer> Copyright &copy; 2019 </footer>
 </body>
-
 </html>
