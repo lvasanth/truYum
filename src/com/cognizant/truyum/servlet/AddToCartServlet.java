@@ -27,7 +27,6 @@ public class AddToCartServlet extends HttpServlet {
         CartDao cartDao = new CartDaoCollectionImpl();
         cartDao.addCartItem(userId, menuItemId);
         MenuItemDao menuItemDao = new MenuItemDaoCollectionImpl();
-
         List<MenuItem> menuItemList = menuItemDao.getMenuItemListCustomer();
         request.setAttribute("addCartStatus", true);
         request.setAttribute("menuItem", menuItemList);

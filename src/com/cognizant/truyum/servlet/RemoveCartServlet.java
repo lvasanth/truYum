@@ -40,7 +40,6 @@ public class RemoveCartServlet extends HttpServlet {
 
             cart.setTotal(price);
             request.setAttribute("menuItem", menuItemList);// carry all the items to cart
-
             request.setAttribute("cart", cart);
             request.setAttribute("removecartItemStatus", true);
             request.getRequestDispatcher("cart.jsp").forward(request, response);

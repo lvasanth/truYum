@@ -26,5 +26,4 @@ public class ShowEditMenuItemServlet extends HttpServlet {
         request.setAttribute("menuItem", menuItem);
         request.getRequestDispatcher("edit-menu-item.jsp").forward(request, response);
     }
-
 }

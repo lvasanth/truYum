@@ -17,7 +17,6 @@
     </header>
     <nav> <a class="menu" href="ShowMenuItemListAdmin"> Menu </a> </nav>
 
-
     <table class="table" cellpadding="10">
         <tr>
             <h1 id="h1">Edit Menu Item Status</h1>

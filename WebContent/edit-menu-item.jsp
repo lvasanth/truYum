@@ -50,7 +50,6 @@
                     placeholder="sandwich"></td>
 
             </tr>
-
             <tr>
                 <td><label for="price">Price (Rs.)<label></td>
                 <td><label for="active">Active</label></td>

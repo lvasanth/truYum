@@ -37,7 +37,6 @@ public class ShowCartServlet extends HttpServlet {
 
             cart.setTotal(price);
             request.setAttribute("menuItem", menuItemList);// carry all th items to cart
-
             request.setAttribute("cart", cart);
             request.getRequestDispatcher("cart.jsp").forward(request, response);
         } catch (CartEmptyException e) {

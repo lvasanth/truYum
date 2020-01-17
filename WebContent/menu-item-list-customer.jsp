@@ -28,7 +28,6 @@
         </tr>
         <tr>
 
-
             <td colspan="5" align="center" id="edit-status"><c:if test="${addCartStatus==true}">
                    Item added to cart Successfully</td>
             </c:if>

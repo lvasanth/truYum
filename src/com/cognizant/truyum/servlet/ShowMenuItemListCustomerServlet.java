@@ -13,9 +13,6 @@ import com.cognizant.truyum.dao.MenuItemDao;
 import com.cognizant.truyum.dao.MenuItemDaoCollectionImpl;
 import com.cognizant.truyum.model.MenuItem;
 
-/**
- * Servlet implementation class ShowMenuItemListCustomerServlet
- */
 @WebServlet("/ShowMenuItemListCustomer")
 public class ShowMenuItemListCustomerServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;

@@ -9,7 +9,6 @@
 <link rel="stylesheet" href="styles\style.css" type="text/css" />
 
 </head>
-
 <body>
     <header>
     <h1>

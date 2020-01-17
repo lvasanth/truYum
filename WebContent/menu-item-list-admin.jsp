@@ -52,7 +52,6 @@
             </tr>
         </c:forEach>
 
-
     </table>
     <footer> Copyright &copy; 2019 </footer>
 
