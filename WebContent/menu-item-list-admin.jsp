@@ -41,7 +41,7 @@
                         <c:otherwise>No</c:otherwise>
                     </c:choose></td>
                 <td class="dateoflaunch"><fmt:formatDate value="${menuItem.getDateOfLaunch()}"
-                        pattern="dd/MM/yyyy" ></fmt:formatDate></td>
+                        pattern="dd/MM/yyyy"></fmt:formatDate></td>
 
                 <td class="category">${menuItem.getCategory()}</td>
                 <td class="delivery"><c:choose>

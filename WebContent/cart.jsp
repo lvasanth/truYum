@@ -18,14 +18,14 @@
     </header>
     <nav> <a class="menu" href="ShowMenuItemListCustomer"> Menu </a> <a class="cart"
         href="ShowCart">Cart</a> </nav>
-     
+
     <c:if test="${removecartItemStatus==true}">
                    Items Removed saved successfully</td>
-            </c:if>
+    </c:if>
 
 
 
-    <table class="table" cellspacing="5" cellpadding="8" >
+    <table class="table" cellspacing="5" cellpadding="8">
 
 
 
@@ -36,14 +36,15 @@
 
         <c:set value="${cart}" var="cart"></c:set>
         <tr>
-
         <tr>
-       
-      
-            <td colspan="5" align="center" id="edit-status"><c:if test="${removecartItemStatus==true}">
+
+
+            <td colspan="5" align="center" id="edit-status"><c:if
+                    test="${removecartItemStatus==true}">
                     Item removed from Cart successfully</td>
-                </c:if></td>
-            
+            </c:if>
+            </td>
+
         </tr>
         <tr>
             <th class="name">Name</th>

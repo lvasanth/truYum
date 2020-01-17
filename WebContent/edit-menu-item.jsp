@@ -64,13 +64,12 @@
                 <td><c:choose>
                         <c:when test="${menuItem.isActive()==true}">
                             <input type="radio" id="active" name="active" checked>Yes <input
-                                type="radio" name="active" id="active">No</td>
-                </c:when>
-                <c:otherwise>
-                    <input type="radio" id="active" name="active">Yes <input type="radio"
-                        name="active" id="active" checked>No</c:otherwise>
-                </c:choose>
-                </td>
+                                type="radio" name="active" id="active" />No</c:when>
+
+                        <c:otherwise>
+                            <input type="radio" id="active" name="active">Yes <input
+                                type="radio" name="active" id="active" checked />No</c:otherwise>
+                    </c:choose></td>
                 <td><fmt:formatDate value="${menuItem.getDateOfLaunch()}" pattern="dd/MM/yyyy"
                         var="dateOfLaunch" /><input type="text" id="dateofLaunch"
                     name="dateofLaunch" value="${dateOfLaunch}" placeholder="dd/mm/yyyy"></td>

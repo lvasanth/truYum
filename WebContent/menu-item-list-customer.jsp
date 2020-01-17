@@ -13,9 +13,6 @@
 <body>
 
 
-
-
-
     <header>
     <h1>
         truYum &nbsp;<img src="images/truyum-logo-light.png" width=33 height=34 />
@@ -25,20 +22,21 @@
         href="ShowCart">Cart</a> </nav>
 
 
-    <table class="table" cellspacing="15" >
+    <table class="table" cellspacing="15">
         <tr>
             <h1 id="h1">Menu Items</h1>
         </tr>
         <tr>
-       
-      
+
+
             <td colspan="5" align="center" id="edit-status"><c:if test="${addCartStatus==true}">
                    Item added to cart Successfully</td>
-                </c:if></td>
-            
+            </c:if>
+            </td>
+
         </tr>
 
-       
+
         <tr>
             <th class="name">Name</th>
             <th class="delivery">Free Delivery</th>

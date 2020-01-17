@@ -29,6 +29,7 @@ public class EditMenuItemServlet extends HttpServlet {
         String isfreeDelivery = request.getParameter("freeDelivery");
         boolean active = false;
         boolean freeDelivery = false;
+     
         if (isactive.equals("No")) {
             active = false;
         } else {
