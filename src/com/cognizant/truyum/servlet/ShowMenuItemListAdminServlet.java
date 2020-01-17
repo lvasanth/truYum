@@ -24,7 +24,5 @@ public class ShowMenuItemListAdminServlet extends HttpServlet {
         List<MenuItem> menuItemList = menuItemDao.getMenuItemListAdmin();
         request.setAttribute("menuItem", menuItemList);
         request.getRequestDispatcher("menu-item-list-admin.jsp").forward(request, response);
-
     }
-
 }

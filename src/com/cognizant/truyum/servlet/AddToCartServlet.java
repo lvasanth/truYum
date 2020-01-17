@@ -23,7 +23,6 @@ public class AddToCartServlet extends HttpServlet {
             throws ServletException, IOException {
 
         long menuItemId = Long.parseLong(request.getParameter("menuItemId"));
-
         long userId = 1L;
         CartDao cartDao = new CartDaoCollectionImpl();
         cartDao.addCartItem(userId, menuItemId);
