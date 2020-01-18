@@ -39,16 +39,15 @@
 
 
             <td colspan="5" align="center" id="edit-status"><c:if
-                    test="${removecartItemStatus==true}">
-                    Item removed from Cart successfully</td>
-            </c:if>
-            </td>
+                    test="${removecartItemStatus==true}">  Item removed from Cart successfully
+                    </c:if></td>
 
         </tr>
         <tr>
             <th class="name">Name</th>
             <th align="left">Free Delivery</th>
             <th class="price">Price</th>
+             <th class="price">Category</th>
         </tr>
         <c:forEach items="${menuItem}" var="menuItem">
             <tr>

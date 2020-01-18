@@ -24,4 +24,5 @@ public class ShowMenuItemListCustomerServlet extends HttpServlet {
         request.setAttribute("menuItem", menuItemList);
         request.getRequestDispatcher("menu-item-list-customer.jsp").forward(request, response);
     }
+
 }
