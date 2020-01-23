@@ -29,14 +29,10 @@ public class ShowCartServlet extends HttpServlet {
             CartDao cartDao = new CartDaoCollectionImpl();
             Cart cart = cartDao.getAllCartItems(userId);
             List<MenuItem> menuItemList = cart.getMenuItemList();
-            double price = 0.0;
-
-            for (MenuItem menuItem : menuItemList) {
-                price = price + menuItem.getPrice();
-            }
+            double price = menuItemList.size();
 
             cart.setTotal(price);
-            request.setAttribute("menuItem", menuItemList);// carry all th items to cart
+            request.setAttribute("menuItem", menuItemList);// carry all the items to cart
             request.setAttribute("cart", cart);
             request.getRequestDispatcher("cart.jsp").forward(request, response);
         } catch (CartEmptyException e) {

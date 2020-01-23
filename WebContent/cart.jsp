@@ -19,7 +19,7 @@
         href="ShowCart">Cart</a> </nav>
 
     <c:if test="${removecartItemStatus==true}">
-                   Items Removed saved successfully</td>
+                   Items Removed saved successfully
     </c:if>
 
 
@@ -34,7 +34,7 @@
         </tr>
 
         <c:set value="${cart}" var="cart"></c:set>
-        <tr>
+   
         <tr>
 
 
